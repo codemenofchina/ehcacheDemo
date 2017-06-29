@@ -7,6 +7,9 @@ import net.sf.ehcache.config.CacheConfiguration;
 
 import java.net.URL;
 
+/***
+ * Ehcache缓存工具类
+ */
 public class EhcacheUtil {
 
     private static final String path = "/cache/ehcache.xml";
