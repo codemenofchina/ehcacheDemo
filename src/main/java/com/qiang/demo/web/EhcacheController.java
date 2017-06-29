@@ -17,11 +17,10 @@ public class EhcacheController {
     @ResponseBody
     @RequestMapping(value="addElement", method = RequestMethod.GET)
     public void addElement(Model model, String key, String value){
-        System.out.println("OKdasd");
-        EhcacheUtil.getInstance().put("userCache","name","qiang");
-        System.out.println(EhcacheUtil.getInstance().get("userCache","name"));
+        EhcacheUtil.getInstance().put("userCache","name","qiang");//会触发 cacheEvent的 put 事件
+        System.out.println(EhcacheUtil.getInstance().get("userCache","name"));//会触发 cacheEvent的 get 事件
 
-        EhcacheUtil.getInstance().addCache("age");
-        EhcacheUtil.getInstance().removeCache("age");
+        EhcacheUtil.getInstance().addCache("age");//会触发 cacheManagerEvent的 add 事件
+        EhcacheUtil.getInstance().removeCache("age");//会触发 cacheManagerEvent的 remove 事件
     }
 }
