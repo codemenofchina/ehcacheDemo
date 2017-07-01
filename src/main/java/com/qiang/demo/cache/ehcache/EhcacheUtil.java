@@ -8,7 +8,7 @@ import net.sf.ehcache.config.CacheConfiguration;
 import java.net.URL;
 
 /***
- * Ehcache缓存工具类
+ * Ehcache缓存工具类dsfsd
  */
 public class EhcacheUtil {
 
