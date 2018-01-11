@@ -7,4 +7,4 @@ spring:     4.2.0.RELEASE
 
 ehcache:    2.10.2
 
-dasdas: dsadad
+win: win7
